@@ -69,14 +69,3 @@ test('renders learn react link',() => {
 });
 
 
-// test('renders learn react link',() => {
-//   render(<Textbox />);
-  
-//   userEvent.type(screen.getByRole("textbox"),"hguygu  uygyu yg uy");
-//   userEvent.click(screen.getByText('Add'));
-//   const paragraph=screen.getByTestId("row-0");
-  
-//   console.log(paragraph.textContent);
-
-
-// });

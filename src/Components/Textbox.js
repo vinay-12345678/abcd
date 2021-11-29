@@ -2,27 +2,19 @@ import React from "react";
 import { useState } from "react";
 
 export default function Textbox() {
-  const [arr, setarr] = useState([]);
+  const [arr, setArr] = useState([]);
   const [text, setText] = useState("");
 
-  const clearall = () => {
+  const clearAll = () => {
     setText("");
   };
 
   const add = () => {
-    let a = text.split(/\s+/).filter((element) => {
-      return element.length !== 0;
-    });
+    // TODO: IMPLEMENT THIS ADD FUNCTION , RESPONSIBLE FOR ADDING THE TEXT ITEM IN PREVIEW TABLE 
 
-    if (a.length > 0) {
-      a = a.join(" ");
-      let b = [...arr, a];
-      setarr(b);
-      setText("");
-    }
   };
 
-  const handleonchange = (event) => {
+  const handleOnChange = (event) => {
     setText(event.target.value);
   };
 
@@ -35,29 +27,24 @@ export default function Textbox() {
       e.preventDefault();
       a = a.join(" ");
       let b = [...arr, a];
-      setarr(b);
+      setArr(b);
       setText("");
     }
   };
 
   const showBullets = () => {
-    let arrr = arr.map((e, index) => {
-      let id="row-"+index;
-      return (
-        <tr
-          key={index}
-          style={{
-            border: "1px solid black",
-            color: index % 2 === 0 ? "green" : "red",
-          }}
-        >
-          <th >{index + 1 + "."}</th>
-          <th data-testid={id}>{e}</th>
-        </tr>
-      );
-    });
+    // TODO : COMPLETE THIS showBullets WHICH RETURNS THE LIST OF ALL ADDED ITEMS
+    /*
+      Each row should look like
+        <tr>
+          <th data-testid = {id} ></th>
+        </th>
 
-    return arrr;
+      where id is row-{index},  possible value of index is 0,1,2,3,4,5
+      Please note that the component has the data-testid attributes for test cases and certain classes and ids for rendering purposes.
+      Adding them is necessary
+    */
+
   };
 
   return (
@@ -70,7 +57,7 @@ export default function Textbox() {
             placeholder="Text to be converted...."
             rows="5"
             value={text}
-            onChange={handleonchange}
+            onChange={handleOnChange}
             onKeyPress={handleOnPress}
           ></textarea>
         </div>
@@ -78,7 +65,7 @@ export default function Textbox() {
         <button
           type="button"
           className="btn btn-danger mx-2 my-1"
-          onClick={clearall}
+          onClick={clearAll}
         >
           Clear
         </button>
