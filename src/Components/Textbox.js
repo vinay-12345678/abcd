@@ -42,15 +42,17 @@ export default function Textbox() {
 
   const showBullets = () => {
     let arrr = arr.map((e, index) => {
+      let id="row-"+index;
       return (
         <tr
+          key={index}
           style={{
             border: "1px solid black",
             color: index % 2 === 0 ? "green" : "red",
           }}
         >
-          <th>{index + 1 + "."}</th>
-          <th>{e}</th>
+          <th >{index + 1 + "."}</th>
+          <th data-testid={id}>{e}</th>
         </tr>
       );
     });
@@ -93,7 +95,9 @@ export default function Textbox() {
         <h2>Preview</h2>
 
         <table style={{ border: "2px solid black", width: "100%" }}>
-          {showBullets()}
+          <tbody>
+            {showBullets()}
+          </tbody>
         </table>
       </div>
     </>
