@@ -40,7 +40,7 @@ export default function Textbox() {
           <th data-testid = {id} ></th>
         </th>
 
-      where id is row-{index},  possible value of index is 0,1,2,3,4,5
+      where id is `row-{index}`,  possible value of index is 0,1,2,3,4,5
       Please note that the component has the data-testid attributes for test cases and certain classes and ids for rendering purposes.
       Adding them is necessary
     */

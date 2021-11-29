@@ -1,12 +1,199 @@
-<testsuites name="jest tests" tests="4" failures="0" time="1.495">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-11-29T19:06:10" time="1.495" tests="4">
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.153">
+<testsuites name="jest tests" tests="3" failures="3" time="1.741">
+  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2021-11-29T19:54:19" time="1.741" tests="3">
+    <testcase classname=" testing add button functionality and table column with index 0" name=" testing add button functionality and table column with index 0" time="0.13">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;row-0&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container my-2&quot;
+    &gt;
+      &lt;div
+        class=&quot;mb-3&quot;
+      &gt;
+        &lt;textarea
+          class=&quot;form-control&quot;
+          id=&quot;mybox&quot;
+          placeholder=&quot;Text to be converted....&quot;
+          rows=&quot;5&quot;
+        &gt;
+          abc
+        &lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button
+        class=&quot;btn btn-danger mx-2 my-1&quot;
+        type=&quot;button&quot;
+      &gt;
+        Clear
+      &lt;/button&gt;
+      &lt;button
+        class=&quot;btn btn-success mx-2 my-1&quot;
+        type=&quot;button&quot;
+      &gt;
+        Add
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      class=&quot;container my-5&quot;
+    &gt;
+      &lt;h2&gt;
+        Preview
+      &lt;/h2&gt;
+      &lt;table
+        style=&quot;border: 2px solid black; width: 100%;&quot;
+      &gt;
+        &lt;tbody /&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abcd/src/App.test.js:11:26)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.071">
+    <testcase classname=" testing add button functionality and table column with index 0 and index 1" name=" testing add button functionality and table column with index 0 and index 1" time="0.059">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;row-0&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container my-2&quot;
+    &gt;
+      &lt;div
+        class=&quot;mb-3&quot;
+      &gt;
+        &lt;textarea
+          class=&quot;form-control&quot;
+          id=&quot;mybox&quot;
+          placeholder=&quot;Text to be converted....&quot;
+          rows=&quot;5&quot;
+        &gt;
+          abcDEF
+        &lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button
+        class=&quot;btn btn-danger mx-2 my-1&quot;
+        type=&quot;button&quot;
+      &gt;
+        Clear
+      &lt;/button&gt;
+      &lt;button
+        class=&quot;btn btn-success mx-2 my-1&quot;
+        type=&quot;button&quot;
+      &gt;
+        Add
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      class=&quot;container my-5&quot;
+    &gt;
+      &lt;h2&gt;
+        Preview
+      &lt;/h2&gt;
+      &lt;table
+        style=&quot;border: 2px solid black; width: 100%;&quot;
+      &gt;
+        &lt;tbody /&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abcd/src/App.test.js:25:26)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.092">
-    </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.031">
+    <testcase classname=" testing add button functionality and table column with index 0 and index 1 and index 2" name=" testing add button functionality and table column with index 0 and index 1 and index 2" time="0.084">
+      <failure>TestingLibraryElementError: Unable to find an element by: [data-testid=&quot;row-0&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;container my-2&quot;
+    &gt;
+      &lt;div
+        class=&quot;mb-3&quot;
+      &gt;
+        &lt;textarea
+          class=&quot;form-control&quot;
+          id=&quot;mybox&quot;
+          placeholder=&quot;Text to be converted....&quot;
+          rows=&quot;5&quot;
+        &gt;
+          abcDefjhsgdJ
+        &lt;/textarea&gt;
+      &lt;/div&gt;
+      &lt;button
+        class=&quot;btn btn-danger mx-2 my-1&quot;
+        type=&quot;button&quot;
+      &gt;
+        Clear
+      &lt;/button&gt;
+      &lt;button
+        class=&quot;btn btn-success mx-2 my-1&quot;
+        type=&quot;button&quot;
+      &gt;
+        Add
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      class=&quot;container my-5&quot;
+    &gt;
+      &lt;h2&gt;
+        Preview
+      &lt;/h2&gt;
+      &lt;table
+        style=&quot;border: 2px solid black; width: 100%;&quot;
+      &gt;
+        &lt;tbody /&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at Object.getElementError (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.&lt;anonymous&gt; (/Users/abittoo/Desktop/Pesto/Project 1/abcd/src/App.test.js:47:26)
+    at Promise.then.completed (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:63:9)
+    at run (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/abittoo/Desktop/Pesto/Project 1/abcd/node_modules/jest-runner/build/runTest.js:472:34)</failure>
     </testcase>
   </testsuite>
 </testsuites>
