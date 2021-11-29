@@ -3,19 +3,19 @@ import Textbox from "./Components/Textbox";
 import userEvent from '@testing-library/user-event';
 
 
-test('renders learn react link',() => {
+test('testing add button functionality and table column with index 0',() => {
   render(<Textbox />);
   
   userEvent.type(screen.getByRole("textbox"),"abc");
   userEvent.click(screen.getByText('Add'));
   const paragraph=screen.getByTestId("row-0");
-  
   expect(paragraph).toHaveTextContent("abc");
+
   const textbox=screen.getByRole("textbox");
   expect(textbox).toHaveTextContent("");
 });
 
-test('renders learn react link',() => {
+test('testing add button functionality and table column with index 0 and index 1',() => {
   render(<Textbox />);
   
   userEvent.type(screen.getByRole("textbox"),"abc");
@@ -25,8 +25,8 @@ test('renders learn react link',() => {
   const paragraph=screen.getByTestId("row-0");
   expect(paragraph).toHaveTextContent("abc");
 
-  const paragraphh=screen.getByTestId("row-1");
-  expect(paragraphh).toHaveTextContent("DEF");
+  const nextParagraph=screen.getByTestId("row-1");
+  expect(nextParagraph).toHaveTextContent("DEF");
 
   const textbox=screen.getByRole("textbox");
   expect(textbox).toHaveTextContent("");
@@ -34,7 +34,7 @@ test('renders learn react link',() => {
 });
 
 
-test('renders learn react link',() => {
+test('testing add button functionality and table column with index 0 and index 1 and index 2',() => {
   render(<Textbox />);
   
   userEvent.type(screen.getByRole("textbox"),"abc");
@@ -47,18 +47,18 @@ test('renders learn react link',() => {
   const paragraph=screen.getByTestId("row-0");
   expect(paragraph).toHaveTextContent("abc");
 
-  const paragraphh=screen.getByTestId("row-1");
-  expect(paragraphh).toHaveTextContent("Def");
+  const nextParagraph=screen.getByTestId("row-1");
+  expect(nextParagraph).toHaveTextContent("Def");
 
-  const paragraphhh=screen.getByTestId("row-2");
-  expect(paragraphhh).toHaveTextContent("jhsgdJ");
+  const finalParagraph=screen.getByTestId("row-2");
+  expect(finalParagraph).toHaveTextContent("jhsgdJ");
 
   const textbox=screen.getByRole("textbox");
   expect(textbox).toHaveTextContent("");
 
 });
 
-test('renders learn react link',() => {
+test('testing clear button functionality and textbox value',() => {
   render(<Textbox />);
   
   userEvent.type(screen.getByRole("textbox"),"abc");
