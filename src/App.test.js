@@ -58,4 +58,13 @@ test('testing add button functionality and table column with index 0 and index 1
 
 });
 
+test('testing clear button functionality and textbox value',() => {
+  render(<Textbox />);
+  
+  userEvent.type(screen.getByRole("textbox"),"abc");
+  userEvent.click(screen.getByText('Clear'));
+  const textbox=screen.getByRole("textbox");
+  expect(textbox).toHaveTextContent("");
+
+});
 

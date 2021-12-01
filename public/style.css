@@ -1,0 +1,20 @@
+table{
+    border-radius: 300px;
+    border: 0px ;
+}
+
+tr {
+    background-color: aquamarine;
+    border: 0px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+tbody {
+    border: none;
+}
+
+th {
+    justify-content: center;
+}
+
