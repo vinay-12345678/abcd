@@ -1,12 +1,12 @@
-<testsuites name="jest tests" tests="4" failures="0" time="1.495">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-11-29T19:06:10" time="1.495" tests="4">
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.153">
+<testsuites name="jest tests" tests="4" failures="0" time="9.037">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2021-12-01T19:24:43" time="9.037" tests="4">
+    <testcase classname=" testing add button functionality and table column with index 0" name=" testing add button functionality and table column with index 0" time="0.144">
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.071">
+    <testcase classname=" testing add button functionality and table column with index 0 and index 1" name=" testing add button functionality and table column with index 0 and index 1" time="0.07">
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.092">
+    <testcase classname=" testing add button functionality and table column with index 0 and index 1 and index 2" name=" testing add button functionality and table column with index 0 and index 1 and index 2" time="0.089">
     </testcase>
-    <testcase classname=" renders learn react link" name=" renders learn react link" time="0.031">
+    <testcase classname=" testing clear button functionality and textbox value" name=" testing clear button functionality and textbox value" time="0.029">
     </testcase>
   </testsuite>
 </testsuites>

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export default function Textbox() {
   const [arr, setArr] = useState([]);
@@ -10,41 +10,52 @@ export default function Textbox() {
   };
 
   const add = () => {
-    // TODO: IMPLEMENT THIS ADD FUNCTION , RESPONSIBLE FOR ADDING THE TEXT ITEM IN PREVIEW TABLE 
-
-  };
-
-  const handleOnChange = (event) => {
-    setText(event.target.value);
-  };
-
-  const handleOnPress = (e) => {
     let a = text.split(/\s+/).filter((element) => {
       return element.length !== 0;
     });
 
-    if (e.key === "Enter" && a.length > 0) {
-      e.preventDefault();
+    if (a.length > 0) {
+
       a = a.join(" ");
+
       let b = [...arr, a];
       setArr(b);
       setText("");
     }
   };
 
+  const handleOnChange = (event) => {
+    setText(event.target.value);
+  };
+
+
+  const checkboxPressed=(e)=>{
+    if((e.currentTarget.parentNode.className).slice(-7)==="striked"){
+      e.currentTarget.parentNode.className="alert alert-primary";
+    }
+    else{
+      e.currentTarget.parentNode.className=e.currentTarget.parentNode.className+" striked";
+    }
+
+  }
+
   const showBullets = () => {
-    // TODO : COMPLETE THIS showBullets WHICH RETURNS THE LIST OF ALL ADDED ITEMS
-    /*
-      Each row should look like
-        <tr>
-          <th data-testid = {id} ></th>
-        </th>
+    let arrr = arr.map((e, index) => {
+      let id="row-"+index;
+      return (
+        <div
+          key={index}
+          className="alert alert-primary"
+        >
+          <span data-testid={id} className={e.isCompleted ? "striked" : "" }>{e}</span>
 
-      where id is row-{index},  possible value of index is 0,1,2,3,4,5
-      Please note that the component has the data-testid attributes for test cases and certain classes and ids for rendering purposes.
-      Adding them is necessary
-    */
+          <input type="checkbox" id={index} name={index} value="text" onClick={checkboxPressed}></input>
 
+        </div>
+      );
+    });
+
+    return arrr;
   };
 
   return (
@@ -58,7 +69,6 @@ export default function Textbox() {
             rows="5"
             value={text}
             onChange={handleOnChange}
-            onKeyPress={handleOnPress}
           ></textarea>
         </div>
 
@@ -81,12 +91,13 @@ export default function Textbox() {
       <div className="container my-5">
         <h2>Preview</h2>
 
-        <table style={{ border: "2px solid black", width: "100%" }}>
-          <tbody>
+          <div>
             {showBullets()}
-          </tbody>
-        </table>
+          </div>
+
       </div>
     </>
   );
 }
+
+

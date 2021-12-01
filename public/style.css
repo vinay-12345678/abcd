@@ -1,0 +1,17 @@
+/* tr{
+    border: "1px solid black",
+    color: "red",
+} */
+/* 
+tr:nth-child(odd) {
+    color: red;
+} */
+
+div input{
+    position: absolute;
+    right: 15px;
+}
+
+.striked{
+    text-decoration: line-through;
+}
