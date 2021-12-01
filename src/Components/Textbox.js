@@ -6,26 +6,13 @@ export default function Textbox() {
   const [text, setText] = useState("");
 
   const clearAll = () => {
-    setText("");
-
+    // TODO: IMPLEMENT THIS CLEAR FUNCTION , RESPONSIBLE FOR REMOVING THE TEXT FROM TEXTBOX
 
   };
 
   const add = () => {
     // TODO: IMPLEMENT THIS ADD FUNCTION , RESPONSIBLE FOR ADDING THE TEXT ITEM IN PREVIEW TABLE 
 
-    let a = text.split(/\s+/).filter((element) => {
-      return element.length !== 0;
-    });
-
-    if (a.length > 0) {
-
-      a = a.join(" ");
-
-      let b = [...arr, a];
-      setArr(b);
-      setText("");
-    }
 
   };
 
@@ -36,7 +23,7 @@ export default function Textbox() {
   const showBullets = () => {
     // TODO : COMPLETE THIS showBullets WHICH RETURNS THE LIST OF ALL ADDED ITEMS
     /*
-      Each row should look like
+      Each div should look like
           <div className="alert alert-primary">
             <span data-testid={id}></span>
           </div>
@@ -45,22 +32,6 @@ export default function Textbox() {
       Please note that the component has the data-testid attributes for test cases and certain classes and ids for rendering purposes.
       Adding them is necessary
     */
-
-
-      let arrr = arr.map((e, index) => {
-        let id="row-"+index;
-        return (
-          <div
-            key={index}
-            className="alert alert-primary"
-          >
-            <span data-testid={id} >{e}</span>
-    
-          </div>
-        );
-      });
-  
-      return arrr;
 
 
   };
