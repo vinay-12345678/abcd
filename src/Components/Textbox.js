@@ -6,7 +6,7 @@ export default function Textbox() {
   const [text, setText] = useState("");
 
   const clearAll = () => {
-    setText("");
+    // TODO: IMPLEMENT THIS CLEAR FUNCTION , RESPONSIBLE FOR REMOVING THE TEXT FROM TEXTBOX
   };
 
   const add = () => {
@@ -18,27 +18,14 @@ export default function Textbox() {
     setText(event.target.value);
   };
 
-  const handleOnPress = (e) => {
-    let a = text.split(/\s+/).filter((element) => {
-      return element.length !== 0;
-    });
-
-    if (e.key === "Enter" && a.length > 0) {
-      e.preventDefault();
-      a = a.join(" ");
-      let b = [...arr, a];
-      setArr(b);
-      setText("");
-    }
-  };
 
   const showBullets = () => {
     // TODO : COMPLETE THIS showBullets WHICH RETURNS THE LIST OF ALL ADDED ITEMS
     /*
       Each row should look like
-        <tr>
-          <th data-testid = {id} ></th>
-        </th>
+        <div className="alert alert-primary">
+          <span data-testid = {id} >
+        </div>
 
       where id is row-{index},  possible value of index is 0,1,2,3,4,5
       Please note that the component has the data-testid attributes for test cases and certain classes and ids for rendering purposes.
@@ -58,7 +45,7 @@ export default function Textbox() {
             rows="5"
             value={text}
             onChange={handleOnChange}
-            onKeyPress={handleOnPress}
+
           ></textarea>
         </div>
 
